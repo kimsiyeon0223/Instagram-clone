@@ -7,10 +7,10 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const Signup = () => {
-  const [email, setEmail] = useState<string>("");
-  const [fullName, setFullName] = useState<string>("");
-  const [username, setUsername] = useState<string>("");
-  const [password, setPassword] = useState<string>("");
+  const [email, setEmail] = useState("");
+  const [fullName, setFullName] = useState("");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const navigate = useNavigate();
 
