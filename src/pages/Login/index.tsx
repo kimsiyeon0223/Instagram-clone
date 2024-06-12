@@ -7,15 +7,20 @@ import Or from "../../Components/Or";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+const Login = ({
+  setUsername,
+}: {
+  setUsername: (username: string) => void;
+}) => {
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
   const navigate = useNavigate();
 
   const handleLogin = () => {
     if (!email || !password) {
       alert("이메일과 비밀번호칸을 한번 더 확인해주세요!");
     } else {
+      setUsername(email);
       navigate("/main");
     }
   };

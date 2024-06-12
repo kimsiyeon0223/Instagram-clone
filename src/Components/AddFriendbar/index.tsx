@@ -1,7 +1,7 @@
 import Profile from "../../assets/Profile";
 import * as S from "./style";
 
-const AddFriendbar = () => {
+const AddFriendbar = ({ username }: { username: string }) => {
   const profiles = [
     {
       id: 1,
@@ -31,8 +31,8 @@ const AddFriendbar = () => {
         <S.MyProfile>
           <Profile width="50px" height="50px" />
           <S.MyName>
-            <div style={{ fontWeight: "bold" }}>yxonxxze</div>
-            <div>김시연</div>
+            <div style={{ fontWeight: "bold" }}>{username}</div>
+            <div>{username}</div>
           </S.MyName>
           <S.ChangeBtn>전환</S.ChangeBtn>
         </S.MyProfile>
@@ -42,8 +42,8 @@ const AddFriendbar = () => {
         </S.Recommend>
         <S.RecommendFriendSection>
           {profiles.map((profile) => (
-            <S.RecommendFriend>
-              <div key={profile.id}>{profile.profile}</div>
+            <S.RecommendFriend key={profile.id}>
+              <div>{profile.profile}</div>
               <S.NameRecommned>
                 <>{profile.name}</>
                 <S.ForMeRecommend style={{ fontSize: "13px" }}>

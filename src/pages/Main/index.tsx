@@ -3,13 +3,13 @@ import Navbar from "../../Components/Navbar";
 import Centerbar from "../../Components/Centerbar";
 import AddFriendbar from "../../Components/AddFriendbar";
 
-const Main = () => {
+const Main = ({ username }: { username: string }) => {
   return (
     <S.Layout>
       <Navbar />
       <S.Line />
       <Centerbar />
-      <AddFriendbar />
+      <AddFriendbar username={username} />
     </S.Layout>
   );
 };
