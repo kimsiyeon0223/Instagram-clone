@@ -4,8 +4,14 @@ import InstagramLogo from "../../assets/InstagramLogo";
 import FacebookWhiteIcon from "../../assets/FacknbookWhiteIcon.png";
 import Or from "../../Components/Or";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const Signup = () => {
+  const [email, setEmail] = useState<string>("");
+  const [fullName, setFullName] = useState<string>("");
+  const [username, setUsername] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+
   const navigate = useNavigate();
 
   const handleLogin = () => {
@@ -13,8 +19,12 @@ const Signup = () => {
   };
 
   const handleSignup = () => {
-    alert("회원가입이 완료되었습니다.");
-    handleLogin();
+    if (!email || !fullName || !username || !password) {
+      alert("모든 필드를 한번 더 확인해주세요!");
+    } else {
+      alert("회원가입이 완료되었습니다.");
+      handleLogin();
+    }
   };
 
   return (
@@ -34,10 +44,27 @@ const Signup = () => {
             <S.LoginBtnMessage>Log in with Facebook</S.LoginBtnMessage>
           </S.FacebookLoginBtn>
           <Or />
-          <S.EmailInput placeholder="Mobile Number of Email" />
-          <S.NameInput placeholder="Full Name" />
-          <S.UsernameInput placeholder="Username" />
-          <S.PwInput placeholder="Password" />
+          <S.EmailInput
+            placeholder="Mobile Number or Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <S.NameInput
+            placeholder="Full Name"
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
+          />
+          <S.UsernameInput
+            placeholder="Username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <S.PwInput
+            placeholder="Password"
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
           <S.LearnMore>
             <div>People who use our service may have uploaded</div>
             <S.LearnMoreMessages>
@@ -47,13 +74,13 @@ const Signup = () => {
           </S.LearnMore>
           <S.Policy>
             <S.PolicyFlex>
-              <div>By signing up, you agree to our Terms , </div>
+              <div>By signing up, you agree to our Terms, </div>
               <S.BlueText>Privacy</S.BlueText>
             </S.PolicyFlex>
             <S.PolicyFlex>
               <S.BlueText>Policy</S.BlueText>
               and
-              <S.BlueText>Cookies Policy .</S.BlueText>
+              <S.BlueText>Cookies Policy.</S.BlueText>
             </S.PolicyFlex>
           </S.Policy>
           <S.SignupBtn onClick={handleSignup}>Sign up</S.SignupBtn>
