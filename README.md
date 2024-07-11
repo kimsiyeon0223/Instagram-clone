@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+# Instagram 클론코딩
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 프로젝트 설명
 
-## Available Scripts
+### 개발기간
+> 2024/06/10 ~ 2024/06/19
 
-In the project directory, you can run:
+### 팀 구성
+> 김시연 : 프론트엔드, 디자인(클론디자인)
 
-### `yarn start`
+### 작품을 제작한 이유
+1학년 때 했던 인스타그램 클론 코딩을 떠올리면 재미있었던 기억이 납니다. 그 프로젝트를 다시 보며, 제 자신이 얼마나 성장했는지를 확인하고 싶었기 때문에 인스타그램 클론코딩을 하게 되었습니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 시연영상
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 기능설명
 
-### `yarn test`
+### 아쉬웠던 점
+- 기능이 너무 부실한 것 같아 아쉬움이 남습니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 향후 계획
+- 코드 리팩토링 기간을 가질 예정입니다.
+- 마이 페이지도 개발할 예정입니다.
